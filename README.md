@@ -1,3 +1,24 @@
+# MASYU Solver
+
+#Prerequisites
+1. Visit `brew.sh` online and follow the steps on the page to install Homebrew
+2. Use Homebrew to install Node package
+3. Use either Node or Homebrew to install Yarn package
+
+#Getting Started
+This displays a page of Masyu puzzle data. To get started:
+1. Run `yarn start` from the project directory
+2. Visit `localhost:3000` to view changes
+
+#Add a Board
+1. Go to `src/data/Boards.json`
+2. Add the data for a given board, see the others for example input. The CSS currently supports 5x5 and 10x10 dimension boards, so other sizes might look off.
+
+#Add Solver Functionality
+1. Go to `src/components/MasyuBoard.js`
+2. Add functions for solutions there.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
