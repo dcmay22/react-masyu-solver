@@ -234,13 +234,13 @@ function MasyuBoard(props) {
                             if (xCoord1 === 0) {
                                 solutionEdges.push([xCoord1, yCoord1 + 1, 'D']);
                                 solutionEdges.push([xCoord1, yCoord2 - 1, 'D']);
-                                impossibleEdges.push([xCoord1, yCoord1 + 1, 'R']);
-                                impossibleEdges.push([xCoord1, yCoord2 1 1, 'L']);
+                                // impossibleEdges.push([xCoord1, yCoord1 + 1, 'R']);
+                                // impossibleEdges.push([xCoord1, yCoord2 - 1, 'L']);
                             } else {//bottom row
                                 solutionEdges.push([xCoord1, yCoord1 + 1, 'U']);
                                 solutionEdges.push([xCoord1, yCoord2 - 1, 'U']);
-                                impossibleEdges.push([xCoord1, yCoord1 - 1, 'R']);
-                                impossibleEdges.push([xCoord1, yCoord2 + 1, 'L']);
+                                // impossibleEdges.push([xCoord1, yCoord1 - 1, 'R']);
+                                // impossibleEdges.push([xCoord1, yCoord2 + 1, 'L']);
 
 
                             }
@@ -250,16 +250,16 @@ function MasyuBoard(props) {
                                 //Top row
                                 solutionEdges.push([xCoord1, yCoord1 - 1, 'D']);
                                 solutionEdges.push([xCoord1, yCoord2 + 1, 'D']);
-                                impossibleEdges.push([xCoord1, yCoord1 - 1, 'L']);
-                                impossibleEdges.push([xCoord1, yCoord2 + 1, 'R']);
+                                // impossibleEdges.push([xCoord1, yCoord1 - 1, 'L']);
+                                // impossibleEdges.push([xCoord1, yCoord2 + 1, 'R']);
 
 
                             }
                             else {//bottom row
                                 solutionEdges.push([xCoord1, yCoord1 - 1, 'U']);
                                 solutionEdges.push([xCoord1, yCoord2 + 1, 'U']);
-                                impossibleEdges.push([xCoord1, yCoord1 - 1, 'L']);
-                                impossibleEdges.push([xCoord1, yCoord2 + 1, 'R']);
+                                // impossibleEdges.push([xCoord1, yCoord1 - 1, 'L']);
+                                // impossibleEdges.push([xCoord1, yCoord2 + 1, 'R']);
 
 
                             }
@@ -271,29 +271,29 @@ function MasyuBoard(props) {
                             if (yCoord1 === 0) {
                                 solutionEdges.push([xCoord1 + 1, yCoord1, 'R']);
                                 solutionEdges.push([xCoord2 - 1, yCoord1, 'R']);
-                                impossibleEdges.push([xCoord2 + 1, yCoord1,"D"]);
-                                impossibleEdges.push([xCoord1 - 1, yCoord1,"U"]);
+                                // impossibleEdges.push([xCoord2 + 1, yCoord1,"D"]);
+                                // impossibleEdges.push([xCoord1 - 1, yCoord1,"U"]);
 
 
                             } else {
                                 solutionEdges.push([xCoord1 - 1, yCoord1, 'L']);
                                 solutionEdges.push([xCoord2 + 1, yCoord1, 'L']);
-                                impossibleEdges.push([xCoord1 + 1, yCoord1,"D"]);
-                                impossibleEdges.push([xCoord2 - 1, yCoord1,"U"]);
+                                // impossibleEdges.push([xCoord1 + 1, yCoord1,"D"]);
+                                // impossibleEdges.push([xCoord2 - 1, yCoord1,"U"]);
                             }
                         //above
                         } else if (xCoord1 === xCoord2 - 1 || xCoord1 === xCoord2 - 2) {
                             if (yCoord1 === 0) {
                                 solutionEdges.push([xCoord1 - 1, yCoord1, 'R']);
                                 solutionEdges.push([xCoord2 + 1, yCoord1, 'R']);
-                                impossibleEdges.push([xCoord2 + 1, yCoord1,"D"]);
-                                impossibleEdges.push([xCoord1 - 1, yCoord1,"U"]);
+                                // impossibleEdges.push([xCoord2 + 1, yCoord1,"D"]);
+                                // impossibleEdges.push([xCoord1 - 1, yCoord1,"U"]);
                             }
                             else {
                                 solutionEdges.push([xCoord1 - 1, yCoord1, 'L']);
                                 solutionEdges.push([xCoord2 + 1, yCoord1, 'L']);
-                                impossibleEdges.push([xCoord2 + 1, yCoord1,"D"]);
-                                impossibleEdges.push([xCoord1 - 1, yCoord1,"U"]);
+                                // impossibleEdges.push([xCoord2 + 1, yCoord1,"D"]);
+                                // impossibleEdges.push([xCoord1 - 1, yCoord1,"U"]);
 
                             }
                         }
