@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MasyuCell from '../components/MasyuCell';
-import LineTo, { SteppedLineTo } from 'react-lineto';
+import LineTo from 'react-lineto';
 import '../styles/masyuboard.css';
-import { random } from 'nanoid';
 
 function MasyuBoard(props) {
 
