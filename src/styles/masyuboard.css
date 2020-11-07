@@ -1,0 +1,29 @@
+.board{
+    display:flex;
+    position:relative;
+    width:auto;
+    height:auto;
+    background-color:grey;
+    margin:64px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.board.col5{
+    width:160px;
+    height:160px;
+}
+.board.col10{
+    width:320px;
+    height:320px;
+}
+
+p{
+    line-height:0;
+    position:relative;
+    display:inherit;
+    height:0;
+    font-size:16px;
+}
+.button_message_container{
+    height:40px;
+}

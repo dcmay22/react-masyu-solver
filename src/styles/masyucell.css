@@ -1,0 +1,35 @@
+.cell{
+    width:32px;
+    /* border:1px solid black; */
+    height:32px;
+    background-color:white;
+    display:inline-block;
+    vertical-align:top;
+    text-align:middle;
+    border: 0.25px solid #888888;
+}
+
+img{
+    height:24px;
+    width:24px;
+    /* line-height:28px; */
+    vertical-align:top;
+    margin-top:4px;
+    object-fit:fill;
+    margin-left:-2px;
+    object-position:50 50;
+    text-align:middle;
+}
+
+.cell-container{
+    width:32px;
+    height:32px;
+    vertical-align: middle;
+}
+.board.col5 .cell-container{
+    flex-basis: 18%;
+}
+
+.board.col10 .cell-container{
+    flex-basis: 10%;
+}
