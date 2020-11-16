@@ -74,7 +74,6 @@ function MasyuBoard(props) {
      */
     function getEdgeCells() {
         var result = [];
-        // var numEdgeCells = 2 * props.rowCount + 2 * props.colCount - 4;
         var lastColIndex = props.colCount - 1;
         var lastRowIndex = props.rowCount - 1;
         for (let i = 0; i < props.colCount; i++) {
@@ -234,14 +233,9 @@ function MasyuBoard(props) {
                             if (xCoord1 === 0) {
                                 solutionEdges.push([xCoord1, yCoord1 + 1, 'D']);
                                 solutionEdges.push([xCoord1, yCoord2 - 1, 'D']);
-                                // impossibleEdges.push([xCoord1, yCoord1 + 1, 'R']);
-                                // impossibleEdges.push([xCoord1, yCoord2 - 1, 'L']);
                             } else {//bottom row
                                 solutionEdges.push([xCoord1, yCoord1 + 1, 'U']);
                                 solutionEdges.push([xCoord1, yCoord2 - 1, 'U']);
-                                // impossibleEdges.push([xCoord1, yCoord1 - 1, 'R']);
-                                // impossibleEdges.push([xCoord1, yCoord2 + 1, 'L']);
-
 
                             }
                             //left
@@ -250,18 +244,10 @@ function MasyuBoard(props) {
                                 //Top row
                                 solutionEdges.push([xCoord1, yCoord1 - 1, 'D']);
                                 solutionEdges.push([xCoord1, yCoord2 + 1, 'D']);
-                                // impossibleEdges.push([xCoord1, yCoord1 - 1, 'L']);
-                                // impossibleEdges.push([xCoord1, yCoord2 + 1, 'R']);
-
-
                             }
                             else {//bottom row
                                 solutionEdges.push([xCoord1, yCoord1 - 1, 'U']);
                                 solutionEdges.push([xCoord1, yCoord2 + 1, 'U']);
-                                // impossibleEdges.push([xCoord1, yCoord1 - 1, 'L']);
-                                // impossibleEdges.push([xCoord1, yCoord2 + 1, 'R']);
-
-
                             }
                         }
                     }
@@ -271,30 +257,19 @@ function MasyuBoard(props) {
                             if (yCoord1 === 0) {
                                 solutionEdges.push([xCoord1 + 1, yCoord1, 'R']);
                                 solutionEdges.push([xCoord2 - 1, yCoord1, 'R']);
-                                // impossibleEdges.push([xCoord2 + 1, yCoord1,"D"]);
-                                // impossibleEdges.push([xCoord1 - 1, yCoord1,"U"]);
-
-
                             } else {
                                 solutionEdges.push([xCoord1 - 1, yCoord1, 'L']);
                                 solutionEdges.push([xCoord2 + 1, yCoord1, 'L']);
-                                // impossibleEdges.push([xCoord1 + 1, yCoord1,"D"]);
-                                // impossibleEdges.push([xCoord2 - 1, yCoord1,"U"]);
                             }
                         //above
                         } else if (xCoord1 === xCoord2 - 1 || xCoord1 === xCoord2 - 2) {
                             if (yCoord1 === 0) {
                                 solutionEdges.push([xCoord1 - 1, yCoord1, 'R']);
                                 solutionEdges.push([xCoord2 + 1, yCoord1, 'R']);
-                                // impossibleEdges.push([xCoord2 + 1, yCoord1,"D"]);
-                                // impossibleEdges.push([xCoord1 - 1, yCoord1,"U"]);
                             }
                             else {
                                 solutionEdges.push([xCoord1 - 1, yCoord1, 'L']);
                                 solutionEdges.push([xCoord2 + 1, yCoord1, 'L']);
-                                // impossibleEdges.push([xCoord2 + 1, yCoord1,"D"]);
-                                // impossibleEdges.push([xCoord1 - 1, yCoord1,"U"]);
-
                             }
                         }
                     }
@@ -351,7 +326,6 @@ function MasyuBoard(props) {
             rowArray[`row${xCoord}`] = rowArray[`row${xCoord}`].concat(props.whiteCircles[i][1]);
             colArray[`col${yCoord}`] = colArray[`col${yCoord}`].concat(props.whiteCircles[i][0]);
         }
-        //TODO - Some improvements for this (if an edge cell, do not add additional edges to solutionEdges)
         console.log(rowArray);
         console.log(colArray);
         for (let i = 0; i < dimension; i++) {
