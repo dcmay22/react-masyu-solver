@@ -8,6 +8,10 @@
     flex-wrap:wrap;
     justify-content:center;
 }
+.board.col4{
+    width:128px;
+    height:128px;
+}
 .board.col5{
     width:160px;
     height:160px;
