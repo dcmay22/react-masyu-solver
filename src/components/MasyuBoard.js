@@ -208,7 +208,8 @@ function MasyuBoard(props) {
             } else if (xCoord === lastRowIndex - 1 || xCoord === lastRowIndex) {
                 solutionEdges.push([xCoord, yCoord, 'U']);
                 solutionEdges.push([xCoord - 1, yCoord, 'U']);
-            } else if (yCoord === 0 || yCoord === 1) {
+            }
+            if (yCoord === 0 || yCoord === 1) {
                 solutionEdges.push([xCoord, yCoord, 'R']);
                 solutionEdges.push([xCoord, yCoord + 1, 'R']);
             } else if (yCoord === lastColIndex - 1 || yCoord === lastColIndex) {
