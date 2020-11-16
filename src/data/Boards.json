@@ -1,6 +1,6 @@
 [
     {
-        "boardName": "Solvable 5x5",
+        "boardName": "Example 5x5",
         "colDimension": 5,
         "rowDimension": 5,
         "whiteCircleArray": [
@@ -11,6 +11,36 @@
         ],
         "blackCircleArray": [
             [1, 2]
+        ]
+    },
+    {
+        "boardName": "Solvable 5x5",
+        "colDimension": 5,
+        "rowDimension": 5,
+        "whiteCircleArray": [
+            [0, 1],
+            [0, 3],
+            [4, 1],
+            [4, 3],
+            [1, 0],
+            [3, 0],
+            [1, 4],
+            [3, 4]
+        ],
+        "blackCircleArray": [
+        ]
+    },
+    {
+        "boardName": "Solvable 4x4",
+        "colDimension": 4,
+        "rowDimension": 4,
+        "whiteCircleArray": [
+        ],
+        "blackCircleArray": [
+            [0, 0],
+            [0, 3],
+            [3, 0],
+            [3, 3]
         ]
     },
     {
@@ -102,6 +132,35 @@
             [8,8]
         ],
         "blackCircleArray": [
+        ]
+    },
+    {
+        "boardName": "Example in paper",
+        "colDimension":10,
+        "rowDimension":10,
+        "whiteCircleArray": [
+            [3,0],
+            [4,0],
+            [0,1],
+            [8,1],
+            [5,4],
+            [6,5],
+            [8,5],
+            [5,6],
+            [6,6],
+            [8,6],
+            [6,8],
+            [2,9]
+        ],
+        "blackCircleArray": [
+            [6,1],
+            [2,2],
+            [7,2],
+            [1,4],
+            [7,4],
+            [3,6],
+            [0,7],
+            [8,7]
         ]
     }
 
